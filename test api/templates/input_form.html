@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Prediction</title>
+</head>
+<body>
+    <h1>Machine Learning Prediction</h1>
+    <form method="POST" action='http://127.0.0.1:8000/api/test/'>
+        {% csrf_token %}
+        <label for="input_data">Input Data:</label>
+        <input type="text" id="input_data" name="input_data" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
